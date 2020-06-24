@@ -29,7 +29,16 @@ namespace c_sharp_intro
             //We can use string interpolation (placeholders) to embed values in
             // a string!
             //@ link: https://docs.microsoft.com/en-us/dotnet/api/system.console.readline?view=netcore-3.1
+            //added 'interpolation' below
             Console.WriteLine("Hey {0}, you're looking great today!", userName);
+
+            //Let's play with string!
+            Console.WriteLine("makemeuppercase".ToUpper()); //Convert to uppercase ...
+            Console.WriteLine("MAKEMELOWERCASE".ToLower()); // Convert of lowercase...
+            //Substring takes two arguements: 1) Starting character postion 2) Number of characters to collect.
+            Console.WriteLine("ABSSDLKJSDFSDGBUEROI".Substring(3,3));
+            Console.WriteLine("XYZ".Length); // Get the number of characters for the string.
+    
         }
     }
 }
