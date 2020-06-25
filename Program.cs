@@ -6,39 +6,37 @@ namespace c_sharp_intro
     {
         static void Main(string[] args)
         {
-            // Two slahes mark the beginning of a single-line comment.
-            // We are assigning a string value to a variable.
-            string myName = "Jia Von";
-            // ';' must be added to end the string
-            /* We begin multi-line comments with a forward-slash and asterisk...
+            // "=" is the assignment operator!
+            // String datatype is used for text.
+            string myString = "This is a string!";
+            // Integer datatype is used for whole numbers (no decimals.)
+            int myInt = 42; 
+            // Double datatype is used for decimal point numbers. 
+            double myDouble = 36.666; 
+            // Boolean dataype is used for TRUE/FALSE values - think binary!
+            bool myBool = true;
 
-            Symbols between values or evaluations are considered "operators."
-            Below we are using the addition symbol to concatenate two strings.
-            (Concatentation means gluing two strings, or texts, together.)
+            //Subtraction operator is "-" (minus.)
+            Console.WriteLine(myInt - 10); // 32 
 
-            ... and we end multi-line comments with an asterisk followed by a forward-slash */
-            Console.WriteLine("Hello, " + myName);
+            // Multiplication oeprator is "*" (multiply.)
+            Console.WriteLine( myInt * 2); // 84
+
+            // Division operator is "/" (division.)
+            Console.WriteLine( myInt / 2 ); // 21
+
+            // Modules operator is "%" (percentage sign.)
+            Console.WriteLine( myInt % 13); // 3
+
+            // Addition operator is "+" (plus.)
+            // ***WAIT! This is ALSO the concatenation opeartor. 
+            Console.WriteLine (myInt + 8); // 50
+
+            Console.WriteLine( "3" + "3" ); // 33
             
-            //New user input name
-            Console.WriteLine("Please enter your name...");
-            // Assign variable 'userName' to a value entered by the user.
-            string userName = Console.ReadLine();
-            // Show the user we collected the name.
-            Console.WriteLine("You have entered : "+userName);
-            // Instead of traditional concatenation using the addition operator ...
-            //We can use string interpolation (placeholders) to embed values in
-            // a string!
-            //@ link: https://docs.microsoft.com/en-us/dotnet/api/system.console.readline?view=netcore-3.1
-            //added 'interpolation' below
-            Console.WriteLine("Hey {0}, you're looking great today!", userName);
+            Console.WriteLine ( "3" + 3 ); // 33
+            Console.WriteLine ( 3 + 6 + "3" ); // 93
 
-            //Let's play with string!
-            Console.WriteLine("makemeuppercase".ToUpper()); //Convert to uppercase ...
-            Console.WriteLine("MAKEMELOWERCASE".ToLower()); // Convert of lowercase...
-            //Substring takes two arguements: 1) Starting character postion 2) Number of characters to collect.
-            Console.WriteLine("ABSSDLKJSDFSDGBUEROI".Substring(3,3));
-            Console.WriteLine("XYZ".Length); // Get the number of characters for the string.
-    
         }
     }
 }
