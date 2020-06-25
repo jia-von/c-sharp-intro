@@ -20,9 +20,8 @@ namespace c_sharp_intro
                 // Calculate the result. 
                 int result = firstNum + secondNum; 
                 Console.WriteLine( "{0} + {1} = {2}", firstNum, secondNum, result );
-            }
-            // Check is the user typed: subtract
-            if ( userOperator == "subtract")
+            } 
+            else if ( userOperator == "subtract" )
             {
                 Console.WriteLine( "Please enter the first number:" );
                 // @link https://stackoverflow.com/questions/1019793/how-can-i-convert-string-to-int
@@ -31,7 +30,7 @@ namespace c_sharp_intro
                 int secondNum = Int32.Parse( Console.ReadLine() );
                 // Calculate the result. 
                 int result = firstNum - secondNum; 
-                Console.WriteLine( "{0} + {1} = {2}", firstNum, secondNum, result );
+                Console.WriteLine( "{0} - {1} = {2}", firstNum, secondNum, result );
             }
         }
 
