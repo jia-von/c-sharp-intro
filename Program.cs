@@ -25,7 +25,9 @@ namespace c_sharp_intro
             }
 
             // if we need to iterate through a list, use foreach!
+            // @link https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/foreach-in
             string [] myList = { "cat", "turtle", "lizard", "frog", "dog" };
+            //is a list of strings
             foreach ( string listItem in myList )
             {
                 Console.WriteLine( "The current item is: {0}", listItem );
