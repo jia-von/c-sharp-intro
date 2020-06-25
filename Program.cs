@@ -23,6 +23,13 @@ namespace c_sharp_intro
             {
                 Console.WriteLine( "Current (for) number is: {0}", i );
             }
+
+            // if we need to iterate through a list, use foreach!
+            string [] myList = { "cat", "turtle", "lizard", "frog", "dog" };
+            foreach ( string listItem in myList )
+            {
+                Console.WriteLine( "The current item is: {0}", listItem );
+            }
         }
         
 
