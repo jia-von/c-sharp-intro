@@ -10,10 +10,10 @@ namespace c_sharp_intro
             Console.WriteLine("Please type: (add/subtract/exit)");
             string command;// Declare a variable.
             // Accept commands. 
-            while( (command = Console.ReadLine() ) !="exit ")
+            while((command=Console.ReadLine())!="exit")
             {
                 int result;
-                if(command== "add")
+                if(command == "add")
                 {
                     Console.WriteLine("Enter first number to add:");
                     int firstNum = CollectIntFromUser();
